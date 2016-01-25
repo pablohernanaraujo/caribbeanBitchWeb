@@ -17,18 +17,6 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .run(['$rootScope', function ($rootScope) {
-
-      //create a new instance
-      new WOW().init();
-
-    $rootScope.$on('$routeChangeStart', function (next, current) {
-
-      //when the view changes sync wow
-      new WOW().sync();
-
-    });
-  }])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
