@@ -22,8 +22,6 @@ angular
       //create a new instance
       new WOW().init();
 
-      new WOW().sync();
-
     $rootScope.$on('$routeChangeStart', function (next, current) {
 
       //when the view changes sync wow
