@@ -12,6 +12,4 @@ angular.module('caribbeanBitchWebApp')
     
     $rootScope.PAGE = 'inicio';
 
-   	$('.parallax').parallax();
-
   });

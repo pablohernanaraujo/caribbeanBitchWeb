@@ -76,15 +76,16 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="bower_components/materialize.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="bower_components/materialize.js"></script>
         <!-- <script src="scripts/controllers/navegador.js"></script> -->
-        <script src="scripts/controllers/inicio.js"></script>
+        <script type="text/javascript" src="scripts/controllers/inicio.js"></script>
         <!-- <script src="scripts/controllers/clientes.js"></script> -->
         <script>
           
           $(document).ready(function(){
 
+            $('.parallax').parallax();
             $(".button-collapse").sideNav();
             $('.tooltipped').tooltip({delay: 50});
 
