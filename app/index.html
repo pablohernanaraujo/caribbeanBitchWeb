@@ -6,13 +6,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
           
           $(document).ready(function(){
 
+            $('.parallax').parallax();
             $('.button-collapse').sideNav();
             $('.tooltipped').tooltip({delay: 50});
+            new WOW().init();
 
           });
 
@@ -57,10 +60,11 @@
       </div>
     </nav>
     <div class="separadorTop"></div>
-    <div>
-      <img src="images/inicio2.jpg">
-    </div>
-
+      <div class="parallax-container" style="height:500px">
+        <div class="parallax">
+          <img src="images/inicio2.jpg">
+        </div>
+      </div>
 
     <div>
       <div ng-view="" class="lado"></div>
@@ -92,7 +96,6 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="bower_components/materialize.js"></script>
         <script type="text/javascript" src="scripts/controllers/inicio.js"></script>
         <!-- endbuild -->
 </body>
